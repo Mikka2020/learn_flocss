@@ -1,0 +1,14 @@
+.p-top-visual {
+  &__caution {
+    display: flex;
+    align-items: center;
+  }
+  &__welcome {
+    font-size: 3rem;
+  }
+  .c-button {
+    border: solid 3px $color-white;
+    border-radius: 50px;
+    padding: 1rem;
+  }
+}

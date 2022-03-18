@@ -1,0 +1,45 @@
+.p-main-list {
+  $padding: 1.6rem;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 12vw));
+  grid-auto-rows: minmax(160px, 12vw);
+  gap: 20px;
+  &__item {
+    background-color: $color-gray1;
+    color: $color-gray3;
+    border-radius: 10px;
+    height: auto;
+    position: relative;
+    padding: $padding;
+  }
+  &__item:hover {
+    background-color: $color-gray2;
+    transition: 0.2s;
+  }
+  &__item.is-active {
+    background-color: $color-black;
+    color: $color-white;
+  }
+  &__play-icon {
+    font-size: 2.4rem;
+    position: absolute;
+    bottom: $padding;
+    left: $padding;
+  }
+  &__time {
+    position: absolute;
+    bottom: $padding;
+    right: $padding;
+  }
+  &__music-icon {
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    position: relative;
+    > i {
+      position: absolute;
+    }
+  }
+}
